@@ -50,6 +50,23 @@ If you're using an earlier version of React:
 npm install react-burger-menu@^2.9.2 --save
 ```
 
+If you are using yarn:
+```
+yarn add react-burger-menu
+```
+
+## Props
+
+The Menu component can accept these props:
+
+Prop | Type | Description
+--- | :---: | :---:
+`isOpen` | `boolean` | Determines whether or not the menu is open
+`onStateChange` | `function` | Callback function when there is a state change
+`width` | `string`/`number` | Width of the menu (ex: "70%", 300)
+`pageWrapId` | `string` | ID of the element wrapping the page content (needed for animations)
+`outerContainerId` | `string` | ID of the element conatining everything (needed for animations)
+
 ## Usage
 
 Items for the sidebar should be passed as child elements of the component using JSX.
@@ -458,6 +475,37 @@ var styles = {
 
 <Menu styles={ styles } />
 ```
+
+## Contribution Guidelines
+We take contributions! Here is how you get started:
+#### 1. Fork the repository: Click the fork button at the top-right of the project repository.
+
+#### 2. Clone your fork:
+```
+git clone https://github.com/your-username/react-burger-menu.git
+```
+
+#### 3. Install dependencies:
+```
+npm install
+```
+
+#### 4. Create a new branch:
+```
+git checkout -b example-branch-name
+```
+
+#### 5. Make changes and commit them:
+```
+git commit -m "Leave a detailed description here!"
+```
+
+#### 6. Push your branch to GitHub:
+```
+git push origin example-branch-name
+```
+
+#### 7. Submit a pull request on the main repository!
 
 ### Browser support
 
